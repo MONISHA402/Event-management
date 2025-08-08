@@ -1,0 +1,286 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #3b0a3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+.logo img {
+  width: 120px;
+  height:100px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.navbar nav {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+.navbar nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-family:'Courier New', monospace;
+  font-weight: bold;
+}
+.navbar nav a.active{
+  color: rgb(40, 215, 40);
+}
+.navbar nav a:hover {
+  color:red; 
+}
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+.search-box {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px #fff;
+}
+.search {  
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.search-login button {
+  color:#fff;
+  font-size: 20px;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fa-user-circle {
+  color: white;
+  font-size: 30px;
+  
+  
+}
+
+/* Vendor Registration Section */
+.vendor-registration {
+  background-color: #fff;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.vendor-image {
+  position: relative;
+  display: inline-block;
+}
+
+.vendor-image img {
+  width: 1300px;
+  height:450px;
+  max-width: 1500px;
+  border-radius: 15px;
+}
+
+.vendor-image h1 {
+  position: absolute;
+  bottom: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2.2rem;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.vendor-text {
+  margin: 30px auto;
+  max-width: 1100px;
+  font-size: 1.9rem;
+  line-height: 1.6;
+  color: #4b0a32;
+ 
+  
+}
+/* Vendor Form Section */
+.vendor-form {
+  background-color: #ddd;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.vendor-form h2 {
+  font-size: 28px;
+  color: #4b0a32;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vendor-form p {
+  font-size: 18px;
+  color: #4b0a32;
+  margin-bottom: 30px;
+}
+
+.vendor-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vendor-form input[type="text"],
+.vendor-form input[type="email"],
+.vendor-form textarea {
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 2px solid #4b0a32;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.vendor-form textarea {
+  resize: vertical;
+  color: black;
+}
+
+.terms, .captcha {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  color: black;
+}
+
+.terms input,
+.captcha input {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  
+}
+.captcha{
+  border: 2px solid black;
+  border-radius: 20px;
+  width: fit-content;
+  background-color: #fff;
+}
+.captcha img {
+  margin-left: 45px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.vendor-form button {
+  padding: 14px;
+  background-color: #4b0a32;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.9rem;
+  cursor: pointer;
+  
+}
+
+.vendor-form button:hover {
+  background-color: #710d48;
+}
+/* footer */
+.footer {
+  background-color: #430c3b;
+  color: white;
+  padding: 2rem;
+  font-family: 'Georgia', serif;
+  border-radius: 25px 25px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.event-img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem;
+  }
+
+  .event-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Quotation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  
+<style>
+   * {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #3b0a3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+.logo img {
+  width: 120px;
+  height:100px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.navbar nav {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+.navbar nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-family:'Courier New', monospace;
+  font-weight: bold;
+}
+.navbar nav a.active{
+  color: rgb(40, 215, 40);
+}
+.navbar nav a:hover {
+  color:red; 
+}
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+.search-box {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px #fff;
+}
+.search {  
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.search-login button {
+  color:#fff;
+  font-size: 20px;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fa-user-circle {
+  color: white;
+  font-size: 30px;
+  
+  
+}
+/* Main content */
+.content {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+
+.image-column {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-column img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.circleimg {
+  border-radius: 50%;
+}
+
+.quotation-section {
+  width: 75%;
+}
+
+.quotation-section h2 {
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+  color: #3e003e;
+  font-size: 2rem;
+  text-align: center;
+}
+.quotation-section p{
+  font-size: 1.6rem;
+}
+.quotation-box {
+  border: 1px solid #3e003e;
+  width: 600px;
+  margin-left:240px;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  text-align: center;
+  color: #3e003e;
+}
+
+
+  /* footer */
+.footer {
+  background-color: #430c3b;
+  color: white;
+  padding: 2rem;
+  font-family: 'Georgia', serif;
+  border-radius: 25px 25px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.event-img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem;
+  }
+
+  .event-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+</style>
+</head>
+<body>
+
+   <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="image/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="event.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="vendor.html">Become a Vendor</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="search-login">
+      <div class="search-box">
+        
+        <input type="text" class="search" value="Search">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <a href="login.html">
+        <i class="fas fa-user-circle"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <section class="content">
+    <div class="image-column">
+      <img src="image/5cdaaf821b7aa56db0a8e873a3fdf027.jpg" class="circleimg" style="border-radius: 50%;" />
+      <img src="image/happy-young-couple-wedding-portrait-the-bride-tenderly-hugged-the-groom-young-brides-and-grooms-are-tenderly-embracing-while-looking-at-the-camera-wedding-bouquet-spring-wedding-photo.jpg" />
+      <img src="image/19812F96-E952-4458-AE5D-C8D893A00BFC.jpeg" class="circleimg" style="border-radius: 50%;" />
+      <img src="image/46aab5ec96d4379141547587212884a9.jpg" />
+    </div>
+    <div class="quotation-section">
+      <h2>Payment Quotation</h2>
+      <div class="quotation-box">
+        <p>
+          All Amounts are Change On Your Way of Selection.
+          It's Only For Appreciate Amount
+          in Number Of Attendees
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+  <div class="footer-content">
+    <!-- Logo Section -->
+    <div class="footer-column logo">
+      <img src="image/logo.jpg" alt="Funner Events Logo" class="logo-img" />
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-column">
+      <ul>
+        <li>Home</li>
+        <li>Events</li>
+        <li>Become a Vector</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- Services Links -->
+    <div class="footer-column">
+      <ul>
+        <li>Our Services</li>
+        <li>Wedding Events</li>
+        <li>Corporate Events</li>
+        <li>Entertainment Events</li>
+        <li>Sports Events</li>
+        <li>All Type Of Family Events</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="footer-column">
+      <img src="image/25ff8f45e3721afaab7c15cc79e74742.jpg" alt="Colorful Event" class="event-img" />
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-section contact">
+      <p><strong>Contact:</strong></p>
+      <p>📍 21, Amman Nagar,<br>RMK Road, Karur-26</p>
+      <p>📞 +921556214566</p>
+      <p>✉️ Funnerevent.in</p>
+      <p><strong>Get in Touch</strong></p>
+      <div class="social-icons">
+        <img src="image/whatsapp.png" alt="WhatsApp" />
+        <img src="image/youtube.png" alt="YouTube" />
+        <img src="image/instagram.png" alt="Instagram" />
+        <img src="image/facebook.png" alt="Facebook" />
+      </div>
+    </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

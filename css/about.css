@@ -1,0 +1,300 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #3b0a3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+.logo img {
+  width: 120px;
+  height:100px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.navbar nav {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+.navbar nav a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-family:'Courier New', monospace;
+  font-weight: bold;
+}
+.navbar nav a.active{
+  color: rgb(40, 215, 40);
+}
+.navbar nav a:hover {
+  color:red; 
+}
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+.search-box {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px #fff;
+}
+.search {  
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.search-login button {
+  color:#fff;
+  font-size: 20px;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fa-user-circle {
+  color: white;
+  font-size: 30px;
+  
+  
+}
+
+/* About Us Section */
+.about-us {
+  padding: 40px 50px;
+  text-align: center;
+  font-family: 'Cookie', cursive;
+}
+
+.about-main-img {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 15px;
+}
+
+.about-text {
+  margin: 30px auto;
+  max-width: 1200px;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #4b0a32;
+}
+
+.our-story {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.story-text {
+  flex: 1 1 500px;
+  padding: 20px;
+  text-align: left;
+}
+
+.story-text h2 {
+  font-size: 32px;
+  color: #4b0a32;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.story-text p {
+  font-size: 20px;
+  color: #4b0a32;
+  line-height: 1.7;
+}
+
+.story-img {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.story-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.values-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #313b3d;
+  color: #fff;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.value-box {
+  flex: 1 1 300px;
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+}
+/* icon color change */
+.icon{
+  filter: brightness(0) invert(1); 
+}
+.value-box img {
+  width: 100px;
+  height: auto;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.value-box h3 {
+  color: #ffd43b;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.value-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* client */
+.clients-section {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.clients-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #4b0a32;
+}
+
+.clients-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.clients-logos {
+  flex: 1 1 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-logos img {
+  height: 60px;
+  object-fit: contain;
+}
+
+.clients-text {
+  flex: 1 1 400px;
+  font-size: 1.6rem;
+  font-family: 'Cookie', cursive;
+  text-align: left;
+  color: #3c003c;
+}
+
+@media (max-width: 768px) {
+  .clients-text {
+    text-align: center;
+    }
+}
+
+/* footer */
+.footer {
+  background-color: #430c3b;
+  color: white;
+  padding: 2rem;
+  font-family: 'Georgia', serif;
+  border-radius: 25px 25px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.event-img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem;
+  }
+
+  .event-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}

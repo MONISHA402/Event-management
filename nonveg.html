@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vegetarian Dishes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #3b0a3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+.logo img {
+  width: 120px;
+  height:100px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.navbar nav {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+.navbar nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-family:'Courier New', monospace;
+  font-weight: bold;
+}
+.navbar nav a.active{
+  color: rgb(40, 215, 40);
+}
+.navbar nav a:hover {
+  color:red; 
+}
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+.search-box {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px #fff;
+}
+.search {  
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.search-login button {
+  color:#fff;
+  font-size: 20px;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fa-user-circle {
+  color: white;
+  font-size: 30px;
+  
+  
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #3e1c53;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-box {
+  background-color: #f6e6fb;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.menu-box img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.menu-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #3b0a3b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.menu-content {
+  display: flex;
+  gap: 30px;
+}
+/* LEFT SIDE - Images */
+.menu-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-images img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* RIGHT SIDE - Text */
+.menu-text {
+  flex: 2;
+}
+
+.sub-title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #3b0a3b;
+      margin-top: 10px;
+    }
+
+    ul {
+      color: #3b0a3b;
+      padding-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-content {
+        flex-direction: column;
+      }
+
+      .menu-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .menu-images img {
+        width: 30%;
+      }
+
+      .menu-text {
+        text-align: center;
+      }
+
+      ul {
+        text-align: left;
+        padding-left: 0;
+      }
+    }
+
+  /* footer */
+.footer {
+  background-color: #430c3b;
+  color: white;
+  padding: 2rem;
+  font-family: 'Georgia', serif;
+  border-radius: 25px 25px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.event-img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem;
+  }
+
+  .event-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="image/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="event.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="vendor.html">Become a Vendor</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="search-login">
+      <div class="search-box">
+        
+        <input type="text" class="search" value="Search">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <a href="login.html">
+        <i class="fas fa-user-circle"></i>
+      </a>
+    </div>
+  </div>
+  <h2>Non Vegetarian Dishes</h2>
+
+  <div class="menu-container">
+
+    <!-- Breakfast -->
+    <div class="menu-box">
+    <div class="menu-title">Breakfast</div>
+    <div class="menu-content">
+      <!-- Left: 3 stacked images -->
+      <div class="menu-images">
+        <img src="image/images (3).jfif" alt="Idly Sambar">
+        <img src="image/images (4).jfif" alt="Poori Masala">
+        <img src="image/carrothalwa.webp" alt="Carrot Halwa">
+      </div>
+
+      <!-- Right: Text -->
+      <div class="menu-text">
+        <div class="sub-title">Main Dishes</div>
+        <ul>
+           <li>Idly - Nalli Kulambu</li>
+            <li>Chicken Gravy</li>
+            <li>Uppuma</li>
+            <li>Puttu Fish Kari</li>
+            <li>Dosa</li>
+            <li>Poori Mutton Sukka</li>
+            <li>Vermicelli</li>
+        </ul>
+
+        <div class="sub-title">Sweets</div>
+        <ul>
+          <<li>Pineapple Kesari</li>
+            <li>Carrot Halwa</li>
+            <li>Mysore Pak</li>
+            <li>Jilebi</li>
+            <li>Laddu Boonthi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <!-- Lunch 1 -->
+    <div class="menu-box">
+      <div class="menu-title">Lunch</div>
+        <div class="menu-content">
+          <div class="menu-images">
+            <img src="image/buffey.webp" alt="Lunch">
+            <img src="image/mutton.jpg" alt="Lunch">
+            <img src="image/Pineapple_Kesari_Bhath_400.jpg" alt="Lunch">
+          </div>
+
+        <div class="menu-text">
+          <div class="sub-title">Main Dishes</div>
+            <ul>
+                <li>Mutton Briyani</li>
+                <li>Rice</li>
+                <li>Chicken Gravy</li>
+                <li>Chicken 65</li>
+                <li>Rasam</li>
+                <li>Curd</li>
+                <li>Mutton Sukka</li>
+                <li>Veg Briyani Fry</li>
+            </ul>
+            <div class="sub-title">Sweets</div>
+            <ul>
+              <li>Pineapple Kesari</li>
+                <li>Carrot Halwa</li>
+                <li>Mysore Pak</li>
+                <li>Jilebi</li>
+                <li>Laddu Boonthi</li>
+            </ul>
+            </div>
+         </div>
+        </div>
+      </div>
+      
+    <br><br>
+<div class="menu-container">
+    <!-- Lunch 2 -->
+    <div class="menu-box">
+      <div class="menu-title">Lunch</div>
+      <div class="menu-content">
+        <div class="menu-images">
+          <img src="image/477486f48831cbea4c5298347513e033.jpg" alt="Lunch 2">
+          <img src="image/nonveg.webp" alt="Lunch 2">
+          <img src="image/gulab-jamun.jpg" alt="Lunch 2">
+        </div>
+
+        <div class="menu-text">
+        <div class="sub-title">Main Dishes</div>
+        <ul>
+               <li>Parotta Chicken Kuruma</li>
+                <li>Mutton Kulambu</li>
+                <li>Adupayan Paya</li>
+                <li>Chappatti Mutton Gravy</li>
+                <li>Mini Idly - Kulambu</li>
+                <li>Curd Rice</li>
+                <li>Uthappam</li>
+        </ul>
+        <div class="sub-title">Sweets</div>
+        <ul>
+          <li>Mysore Pak</li>
+          <li>Gulab Jamun</li>
+        </ul>
+        </div>
+      </div>  
+    </div>
+    <!-- Middle Snacks -->
+    <div class="menu-box">
+      <div class="menu-title">Middle Snacks & Drinks</div>
+      <div class="menu-content">
+        <div class="menu-images">
+            <img src="image/images (2).jfif" alt="Snacks">
+            <img src="image/gulab-jamun.jpg" alt="Lunch 2">
+          </div> 
+
+          <div class="menu-text">
+            <div class="sub-title">Drinks</div>
+            <ul>
+              <li>Masala Tea</li>
+              <li>Filter Coffee</li>
+              <li>Badam Milk</li>
+              <li>Juices</li>
+            </ul>
+            <div class="sub-title">Snacks</div>
+              <ul>
+                <li>Masal Bonda</li>
+                <li>Cakes</li>
+                <li>Biscuits</li>
+                <li>Bajji</li>
+              </ul>
+            </div>
+          </div>   
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column logo">
+        <img src="image/logo.jpg" alt="Logo" />
+      </div>
+      <div class="footer-column">
+        <ul>
+          <li>Home</li>
+          <li>Events</li>
+          <li>Become a Vendor</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul>
+          <li>Our Services</li>
+          <li>Wedding Events</li>
+          <li>Corporate Events</li>
+          <li>Entertainment Events</li>
+          <li>Sports Events</li>
+          <li>All Type of Family Events</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>📍 21, Amman Nagar, RMK Road, Karur-26</p>
+        <p>📞 +921556214566</p>
+        <p>✉️ funnerevent.in</p>
+        <p><strong>Get in Touch</strong></p>
+        <div class="social-icons">
+          <img src="image/whatsapp.png" alt="WhatsApp" />
+          <img src="image/youtube.png" alt="YouTube" />
+          <img src="image/instagram.png" alt="Instagram" />
+          <img src="image/facebook.png" alt="Facebook" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

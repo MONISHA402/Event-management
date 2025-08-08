@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Services</title>
+  <link rel="stylesheet" href="css/weddingevent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<style>
+  
+</style>
+</head>
+<body>
+
+ <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="image/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="event.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="vendor.html">Become a Vendor</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="search-login">
+      <div class="search-box">
+        
+        <input type="text" class="search" value="Search">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <a href="login.html">
+        <i class="fas fa-user-circle"></i>
+      </a>
+    </div>
+  </div>
+
+
+<!-- Hero Banner with Form -->
+<section class="hero">
+  <img src="image/haldhi.jpeg" alt="hero" class="hero-bg" />
+  
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>YOUR PERFECT<br> WEDDING,<br> METICULOUSLY<br> PLANNED AND <br><span class="highlight">BEAUTIFULLY <br>EXECUTED</span></h1>
+    </div>
+
+
+    <form class="hero-form">
+      <input type="text" value="Name" />
+      <input type="email" value="E mail" />
+      <input type="tel" value="Mobile No" />
+      <input type="text" value="Wedding Event" />
+      <input type="text" value="Select Number Of Attendees" />
+     <div class="captcha">
+      <input type="checkbox" id="robot" required />
+      <label for="robot">I Am Not a Robot</label>
+      <img src="image/RecaptchaLogo.svg.png" alt="Captcha Image" />
+    </div>
+    
+      <button>Get a Free Consultation</button>
+    </form>
+  </div>
+</section>
+
+<!-- Offerings -->
+<section class="offerings">
+  <h2>Our Offerings</h2>
+  <div class="offer-grid">
+    <div class="offer"><img src="image/istockphoto-1340256496-612x612.jpg" /><p>Wedding Planner</p></div>
+    <div class="offer"><a href="wedeven.html"><img src="image/koncepts-01.jpg" /></a><p>Wedding Decor</p></div>
+    <div class="offer"><img src="image/festal-events-h-thumb.jpg" /><p>Hospitality</p></div>
+    <div class="offer"><img src="image/3(1).jpg" /><p>Logistics</p></div>
+    <div class="offer"><img src="image/wedding-videography-services-1505984902-3342095.jpeg" /><p>Photography & Videography</p></div>
+    <div class="offer"><img src="image/2(1).jpg" /><p>Artist Management</p></div>
+    <div class="offer"><img src="image/Types-of-Accommodations-in-Tourism.jpg" /><p>Accommodation</p></div>
+   
+  <div class="image-container" onclick="toggleDropdown(this)">
+  <img src="image/download (1).jfif" alt="Veg and Non-Veg">
+  <div class="dropdown-content">
+    <a href="food.html">Vegetarian</a>
+    <a href="nonveg.html">Non-Vegetarian</a>
+    
+  </div>
+  <p>Veg and Non-veg catering</p>
+</div>
+
+    
+    <div class="offer"><img src="image/indian-wedding-dress-up-games-shades-photography-india-saree.jpeg" /><p>Dress</p></div>
+    <div class="offer"><img src="image/wedding-ceremony-with-lights-flowers-beach_1028782-261460.avif" /><p>Wedding Location</p></div>
+    <div class="offer"><img src="image/product-jpeg.jpg" /><p>Return Gifts</p></div>
+    <div class="offer"><img src="image/dulhan-mehndi-designs-pinterest-arabic-dulhan-mehndi-designs.jpg" /><p>Mehandi & Makeup Artist</p></div>
+  </div>
+</section>
+
+<!-- footer -->
+  <footer class="footer">
+  <div class="footer-content">
+    <!-- Logo Section -->
+    <div class="footer-column logo">
+      <img src="image/logo.jpg" alt="Funner Events Logo" class="logo-img" />
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-column">
+      <ul>
+        <li>Home</li>
+        <li>Events</li>
+        <li>Become a Vector</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- Services Links -->
+    <div class="footer-column">
+      <ul>
+        <li>Our Services</li>
+        <li>Wedding Events</li>
+        <li>Corporate Events</li>
+        <li>Entertainment Events</li>
+        <li>Sports Events</li>
+        <li>All Type Of Family Events</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="footer-column">
+      <img src="image/25ff8f45e3721afaab7c15cc79e74742.jpg" alt="Colorful Event" class="event-img" />
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-section contact">
+      <p><strong>Contact:</strong></p>
+      <p>📍 21, Amman Nagar,<br>RMK Road, Karur-26</p>
+      <p>📞 +921556214566</p>
+      <p>✉️ Funnerevent.in</p>
+      <p><strong>Get in Touch</strong></p>
+      <div class="social-icons">
+        <img src="image/whatsapp.png" alt="WhatsApp" />
+        <img src="image/youtube.png" alt="YouTube" />
+        <img src="image/instagram.png" alt="Instagram" />
+        <img src="image/facebook.png" alt="Facebook" />
+      </div>
+    </div>
+    </div>
+  </div>
+</footer>
+<script>
+function toggleDropdown(element) {
+  element.classList.toggle('active');
+}
+</script>
+</body>
+</html>

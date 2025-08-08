@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Wedding Decor Models</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #3b0a3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+.logo img {
+  width: 120px;
+  height:100px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.navbar nav {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+.navbar nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-family:'Courier New', monospace;
+  font-weight: bold;
+}
+.navbar nav a.active{
+  color: rgb(40, 215, 40);
+}
+.navbar nav a:hover {
+  color:red; 
+}
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+.search-box {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px #fff;
+}
+.search {  
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.search-login button {
+  color:#fff;
+  font-size: 20px;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fa-user-circle {
+  color: white;
+  font-size: 30px;
+  
+  
+}
+/* Main Content */
+    
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #4B004F;
+  font-size: 1.8rem;
+}
+
+.decor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 90px;
+  margin-top: 30px;
+}
+
+.decor-card {
+  background: #e9d1ecb5;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgb(204, 168, 207);
+  overflow: hidden;
+  text-align: center;
+}
+
+.decor-card img {
+  width: 100%;
+  padding:30px;
+  height: 430px;
+  object-fit: cover;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius:50% ;
+  
+
+}
+
+.decor-card h4 {
+  margin: 15px 10px 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.decor-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.decor-card .price {
+   font-weight: bold;
+   color: #4B004F;
+   margin-bottom: 15px;
+}
+
+  /* footer */
+.footer {
+  background-color: #430c3b;
+  color: white;
+  padding: 2rem;
+  font-family: 'Georgia', serif;
+  border-radius: 25px 25px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.event-img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem;
+  }
+
+  .event-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="image/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="event.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="vendor.html">Become a Vendor</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="search-login">
+      <div class="search-box">
+        
+        <input type="text" class="search" value="Search">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <a href="login.html">
+        <i class="fas fa-user-circle"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h2>Our Wedding Decor Models</h2>
+
+    <h2>Outdoor Decor Models</h2>
+    <div class="decor-grid">
+      <!-- Outdoor Card 1 -->
+      <div class="decor-card">
+        <img src="image/Srinidhi-Rishi-Taj+Fishermans+Cove-0830.jpg" alt="Beach Wedding">
+        <h4>Beach Wedding Party Setup</h4>
+        <p>Style: Outdoor</p>
+        <p class="price">Price: $25,000</p>
+      </div>
+
+      <!-- Outdoor Card 2 -->
+      <div class="decor-card">
+        <a href="couplepic.html"><img src="image/wedding-decor-mandap-italy.jpg" alt="Rustic Decor"></a>
+        <h4>Rustic Wedding Arch Decor</h4>
+        <p>Style: Outdoor</p>
+        <p class="price">Price: $15,000</p>
+      </div>
+      <!-- Outdoor Card 3 -->
+      <div class="decor-card">
+        <img src="image/20687115616_f6a4ee38be_o.jpg" alt="Beach Wedding">
+        <h4>Beach Wedding Party Setup</h4>
+        <p>Style: Outdoor</p>
+        <p class="price">Price: $25,000</p>
+      </div>
+
+      <!-- Outdoor Card 4 -->
+      <div class="decor-card">
+        <img src="image/f7a4a569327e8d779940af4149c00f09.jpg" alt="Rustic Decor">
+        <h4>Rustic Wedding Arch Decor</h4>
+        <p>Style: Outdoor</p>
+        <p class="price">Price: $15,000</p>
+      </div>
+      <!-- Outdoor Card 5 -->
+      <div class="decor-card">
+        <img src="image/aakar-events-thumb-700x452.jpg" alt="Beach Wedding">
+        <h4>Beach Wedding Party Setup</h4>
+        <p>Style: Outdoor</p>
+        <p class="price">Price: $25,000</p>
+      </div>
+
+      <!-- Outdoor Card 6 -->
+      <div class="decor-card">
+        <img src="image/WD_21-1.jpg" alt="Rustic Decor">
+        <h4>Rustic Wedding Arch Decor</h4>
+        <p>Style: Outdoor</p>
+        <p class="price">Price: $15,000</p>
+      </div>
+
+      <!-- Add more cards similarly -->
+    </div>
+
+    <h2>Indoor Decor Models</h2>
+    <div class="decor-grid">
+      <!-- Indoor Card 1 -->
+      <div class="decor-card">
+        <img src="image/1520184378816.jfif" alt="Royal Hall Decor">
+        <h4>Royal Hall Theme</h4>
+        <p>Style: Indoor</p>
+        <p class="price">Price: $20,000</p>
+      </div>
+
+      <!-- Indoor Card 2 -->
+      <div class="decor-card">
+        <img src="image/e438f51bbbfb00cd340789e2159e592d.jpg" alt="Temple Decor">
+        <h4>Temple Theme Grand Entrance</h4>
+        <p>Style: Indoor</p>
+        <p class="price">Price: $18,000</p>
+      </div>
+       <!-- Indoor Card 3 -->
+      <div class="decor-card">
+        <img src="image/fe.jpg" alt="Royal Hall Decor">
+        <h4>Royal Hall Theme</h4>
+        <p>Style: Indoor</p>
+        <p class="price">Price: $20,000</p>
+      </div>
+
+      <!-- Indoor Card 4 -->
+      <div class="decor-card">
+        <img src="image/Sri-Lanka-Wedding-Decorations.jpg" alt="Temple Decor">
+        <h4>Temple Theme Grand Entrance</h4>
+        <p>Style: Indoor</p>
+        <p class="price">Price: $18,000</p>
+      </div>
+       <!-- Indoor Card 5 -->
+      <div class="decor-card">
+        <img src="image/3ddcf9a883a74fb85dc33d23c257afb4.jpg" alt="Royal Hall Decor">
+        <h4>Royal Hall Theme</h4>
+        <p>Style: Indoor</p>
+        <p class="price">Price: $20,000</p>
+      </div>
+
+      <!-- Indoor Card 6 -->
+      <div class="decor-card">
+        <img src="image/Clipboard 2025-08-08 13-05-01.jpg" alt="Temple Decor">
+        <h4>Temple Theme Grand Entrance</h4>
+        <p>Style: Indoor</p>
+        <p class="price">Price: $18,000</p>
+      </div>
+
+      <!-- Add more cards similarly -->
+    </div>
+  </div>
+
+ <!-- footer -->
+  <footer class="footer">
+  <div class="footer-content">
+    <!-- Logo Section -->
+    <div class="footer-column logo">
+      <img src="image/logo.jpg" alt="Funner Events Logo" class="logo-img" />
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-column">
+      <ul>
+        <li>Home</li>
+        <li>Events</li>
+        <li>Become a Vector</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- Services Links -->
+    <div class="footer-column">
+      <ul>
+        <li>Our Services</li>
+        <li>Wedding Events</li>
+        <li>Corporate Events</li>
+        <li>Entertainment Events</li>
+        <li>Sports Events</li>
+        <li>All Type Of Family Events</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="footer-column">
+      <img src="image/25ff8f45e3721afaab7c15cc79e74742.jpg" alt="Colorful Event" class="event-img" />
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-section contact">
+      <p><strong>Contact:</strong></p>
+      <p>📍 21, Amman Nagar,<br>RMK Road, Karur-26</p>
+      <p>📞 +921556214566</p>
+      <p>✉️ Funnerevent.in</p>
+      <p><strong>Get in Touch</strong></p>
+      <div class="social-icons">
+        <img src="image/whatsapp.png" alt="WhatsApp" />
+        <img src="image/youtube.png" alt="YouTube" />
+        <img src="image/instagram.png" alt="Instagram" />
+        <img src="image/facebook.png" alt="Facebook" />
+      </div>
+    </div>
+    </div>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
